@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "gsl_fft_real.h": "c"
+    },
+    "python.pythonPath": "/home/cfa/anaconda3/bin/python"
+}
