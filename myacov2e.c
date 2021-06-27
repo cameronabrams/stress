@@ -129,7 +129,7 @@ int main (int argc, char * argv[]) {
   for (i = 0; i < n/2; i+=2) {
     freq=i?1.0/(i*delta_ps):0.0;  // units of 1/ps
     mag=sqrt(c[i]*c[i]+c[i+1]*c[i+1]);  // units of bar^2
-    fprintf(fp,"%d %le %le\n", i, freq, 3*freq*delta_ps*fac_bar*1.e5*mag);
+    fprintf(fp,"%d %le %le\n", i, freq, 3*freq*delta_ps*fac_bar*Pa_per_bar*mag); // bar to Pa 
   }
 
   gsl_fft_real_workspace_free (work);
