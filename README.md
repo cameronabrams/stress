@@ -42,9 +42,11 @@
     Wrote 6-fold average to acov-avg6.dat
     Generated acov-avg6.png.
     ```
-    This generates the datafile for $C(t)$ vs $t$ called `acov6-avg.dat`, and individual files for each component.  A plot is also generated in `acov-avg6.png`.  The plot below is generated from data from a 40-ns NVE MD trajectory.
+    This generates the datafile for $C(t)$ vs $t$ called `acov-avg6.dat`, and individual files for each component.  A plot is also generated in `acov-avg6.png`.  The plot below is generated from data from a 40-ns NVE MD trajectory.
 
     ![](acov-avg6.png)
+
+    The program `myacfplot.py` can be called to generate this plot from an existing file.  `acov6.py` uses a function defined in `myacfplot.py` to generate the plot.
 
 4. `myacov2e.c` to compute $E$
    ```bash
