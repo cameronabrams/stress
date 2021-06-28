@@ -30,7 +30,7 @@
 
 3. Use `acov6.py` to get autocovariance of each component and their collective six-fold average $C(t)$:
     ```bash
-    > python acov6.py -od acov6-avg.dat -op acov6-avg.png energy.xvg
+    > python acov6.py -od acov-avg6.dat -op acov-avg6.png energy.xvg
     Reading energy.xvg...
     energy.xvg has 40000001 lines
     Wrote acovxy.dat.
@@ -39,12 +39,12 @@
     Wrote acovzx.dat.
     Wrote acovyz.dat.
     Wrote acovzy.dat.
-    Wrote 6-fold average to acov6-avg.dat
-    Generated acov6-avg.png.
+    Wrote 6-fold average to acov-avg6.dat
+    Generated acov-avg6.png.
     ```
-    This generates the datafile for $C(t)$ vs $t$ called `acov6-avg.dat`, and individual files for each component.  A plot is also generated in `acov6-avg.png`.  The plot below is generated from data from a 40-ns NVE MD trajectory.
+    This generates the datafile for $C(t)$ vs $t$ called `acov6-avg.dat`, and individual files for each component.  A plot is also generated in `acov-avg6.png`.  The plot below is generated from data from a 40-ns NVE MD trajectory.
 
-    ![](acov6-avg.png)
+    ![](acov-avg6.png)
 
 4. `myacov2e.c` to compute $E$
    ```bash
