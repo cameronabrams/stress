@@ -8,8 +8,8 @@ def myacfplot (lags,acf,outfile='plot.png',**kwargs):
     ax.set_ylabel('C(t) (bar$^2$)')
     ax.set_xscale('log')
     ax.set_yscale('log')
-    ax.scatter(lags[0:len(acf)],acf,marker='o',alpha=0.3,
-                color='blue',facecolors='none',markersize=0.2)
+    ax.scatter(lags[0:len(acf)],acf,marker='.',alpha=0.3,
+                color='blue',facecolors='none',s=5)
     plt.savefig(outfile,bbox_inches='tight')
     print('Generated {:s}.'.format(outfile))
 
